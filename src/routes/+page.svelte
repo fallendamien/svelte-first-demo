@@ -1,21 +1,12 @@
 <script lang="ts">
-  let username = $state("");
-
-  $effect(() => {
-    console.log("$effect rune is initiated");
-
-    if (username) {
-      console.log(
-        `I will send the name to the database, current username is: ${username}`
-      );
-    }
-  });
+  let userName = $state("Existing Username");
+  $inspect(userName);
 </script>
 
-<h1>Your username</h1>
-<input type="text" bind:value={username} />
+<h1>Your userName</h1>
+<input type="text" bind:value={userName} />
 
-<p>{username}</p>
+<p>{userName}</p>
 
 <style>
   h1 {
