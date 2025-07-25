@@ -5,5 +5,5 @@ export async function POST({ request }) {
 
   console.log(requestBody);
 
-  return json({ message: "All good." });
+  return json({ message: "All good, today is friday." });
 }
